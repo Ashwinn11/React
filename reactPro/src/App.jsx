@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import ListGroup from './components/ListGroup'
+import { useState } from "react";
+import ListGroup from "./components/ListGroup";
 
 function App() {
-  
   return (
     <>
-    <h1>react welcome</h1>
-    <ListGroup/>
+      <ListGroup />
     </>
-    
-  )
+  );
 }
 
-export default App
+export default App;
