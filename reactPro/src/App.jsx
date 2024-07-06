@@ -1,11 +1,14 @@
 import { useState } from 'react'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import ListGroup from './components/ListGroup'
 
 function App() {
   
   return (
+    <>
     <h1>react welcome</h1>
+    <ListGroup/>
+    </>
+    
   )
 }
 
