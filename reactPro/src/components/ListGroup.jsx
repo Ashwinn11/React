@@ -1,5 +1,5 @@
 import {useState} from 'react';
-const ListGroup = () => {
+const ListGroup = ({props:{name,age}}) => {
   const items = ["New York", "Chennai", "Dubai"];
   const [selectedIndex,setSelectedIndex]=useState(-1)
 
@@ -7,6 +7,7 @@ const ListGroup = () => {
     <>
       <ul className="list-group">
         <h2>List</h2>
+        {age}
         {items.map((item,index) => (
           <li className={ selectedIndex===index? 'list-group-item active' :'list-group-item'} key={item} onClick={()=>setSelectedIndex(index)} >
             {item}
